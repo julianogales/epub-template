@@ -1,34 +1,31 @@
-/* Estilos de texto para libro ePub */
-
-/* Familia de fuentes tipográficas */
+/* Font family: SitkaSmall */
 
 @font-face {
-  font-family: 'crimson';
+  font-family: 'sitka-small';
   font-style: normal;
   font-weight: normal;
-  src: url(../Fonts/CrimsonText-Roman.ttf);
+  src: url(Fonts/SitkaSmall.ttf);
 }
 
 @font-face {
-  font-family: 'crimson';
+  font-family: 'sitka-small';
   font-style: italic;
   font-weight: normal;
-  src: url(../Fonts/CrimsonText-Italic.ttf);
+  src: url(Fonts/SitkaSmall-Italic.ttf);
 }
 
 @font-face {
-  font-family: 'crimson';
+  font-family: 'sitka-small';
   font-style: normal;
   font-weight: bold;
-  src: url(../Fonts/CrimsonText-Semibold.ttf);
+  src: url(Fonts/SitkaSmall-Bold.ttf);
 }
 
-/* Estilos basados en el template: ePub base r1.2 ePubLibre */
 
-/* Cuerpo de texto */
+/* Body of the text */
 
 body {
-  font-family: crimson;
+  font-family: sitka-small, serif;
   margin: 1em;
   padding: 0;
   border: 0;
