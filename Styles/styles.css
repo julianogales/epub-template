@@ -4,21 +4,21 @@
   font-family: 'sitka-small';
   font-style: normal;
   font-weight: normal;
-  src: url(Fonts/SitkaSmall.ttf);
+  src: url(../Fonts/SitkaSmall.ttf);
 }
 
 @font-face {
   font-family: 'sitka-small';
   font-style: italic;
   font-weight: normal;
-  src: url(Fonts/SitkaSmall-Italic.ttf);
+  src: url(../Fonts/SitkaSmall-Italic.ttf);
 }
 
 @font-face {
   font-family: 'sitka-small';
   font-style: normal;
   font-weight: bold;
-  src: url(Fonts/SitkaSmall-Bold.ttf);
+  src: url(../Fonts/SitkaSmall-Bold.ttf);
 }
 
 
@@ -31,7 +31,8 @@ body {
   border: 0;
 }
 
-/* Párrafo */
+
+/* Paragraph */
 
 p {
   margin: 0;
@@ -40,14 +41,10 @@ p {
   line-height: 1.25em;
 }
 
-/* Encabezados */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
   margin: 25% 0.25em 1em;
   text-align: center;
   text-indent: 0;
@@ -60,6 +57,7 @@ h6 {
 
 h1 {
   font-size: 1.5em;
+  padding-bottom: 2.5em;
 }
 
 h2 {
@@ -82,38 +80,73 @@ h6 {
   font-size: 1.1em;
 }
 
-/* Dedicatoria */
 
-.dedicatoria {
-  margin: 5em 1em 0 3em;
-  text-align: right;
-}
+/* References and links */
 
-.dedicatoria p {
-  text-align: right;
-  text-indent: 0;
-}
-
-/* Enlaces */
-
-a,
-.normal {
+a, .normal {
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
 }
 
-/* Subíncide y superíndice */
 
-sup,
-sub {
-  font-size: 0.75em;
-  line-height: normal;
+/* Alignment */
+
+.left, .left p {
+  text-align: left;
 }
 
-/* Estilos de portada y cubiertas */
+.right, .right p {
+  text-align: right;
+  text-indent: 0;
+}
 
-.cubierta {
+.center, .center p {
+  text-align: center;
+  text-indent: 0;
+}
+
+.justify, .justify p {
+  text-align: justify;
+}
+
+.noIndent, .noIndent p {
+  text-indent: 0;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+
+/* Top margins */
+
+.noTop {
+  margin-top: 0;
+}
+
+.jumpInit {
+  margin-top: 33%;
+}
+
+.jump05 {
+  padding-top: 0.5em;
+}
+
+
+/* Lists */
+
+li {
+  margin: 0;
+  text-align: justify;
+  text-indent: 0;
+  line-height: 1.3em;
+}
+
+
+/* Images */
+
+.img-cover {
   margin: 0;
   padding: 0;
   border: 0;
@@ -123,130 +156,18 @@ sub {
   page-break-before: always;
   page-break-after: always;
 }
-
-.cubierta img {
+.img-cover img {
   height: 100%;
   max-height: 100%;
 }
 
-/* Alineación */
-
-.izquierda,
-.izquierda p {
-  text-align: left;
-}
-
-.derecha,
-.derecha p {
-  text-align: right;
-  text-indent: 0;
-}
-
-.centrado,
-.centrado p {
-  text-align: center;
-  text-indent: 0;
-}
-
-.justificado,
-.justificado p {
-  text-align: justify;
-}
-
-.asangre,
-.asangre p {
-  text-indent: 0;
-}
-
-/* Hipervínculos */
-
-.sintop {
-  margin-top: 0;
-}
-
-.saltoinicio {
-  margin-top: 33%;
-}
-
-.salto05 {
-  padding-top: 0.5em;
-}
-
-.salto10 {
-  padding-top: 1em;
-}
-
-.salto25 {
-  padding-top: 2.5em;
-}
-
-
-/* Bloques */
-
-.sinmargen {
-  margin: 0;
-}
-
-blockquote,
-.cita {
-  margin: 1.5em;
-}
-
-.bloque {
-  page-break-inside: avoid;
-}
-
-/* Evita dividir un elemento entre páginas */
-
-.nosep {
-  text-indent: 0;
-  display: inline-block;
-}
-
-/* Evita dividir una palabra entre líneas */
-
-.extenso {
-  orphans: 0;
-  widows: 0;
-}
-
-/* Evita división aleatoria de párrafos muy extensos (bug ADE) */
-
-.banner {
-  margin: 1.5em 12%;
-  padding: 0.5em 1em;
-  text-align: center;
-  text-indent: 0;
-  border: 2px solid black;
-  border-left: none;
-  border-right: none;
-}
-
-.banner p {
-  text-align: center;
-  text-indent: 0;
-}
-
-/* Listas */
-
-li {
-  margin: 0;
-  text-align: justify;
-  text-indent: 0;
-  line-height: 1.3em;
-}
-
-/* Imágenes simples */
-/* para página completa usar el estilo fijo «cubierta» */
-
-.ilustra {
+.img-simple {
   margin: 1em 0;
   text-align: center;
   text-indent: 0;
   display: block;
 }
-
-.ilustra img {
+.img-simple img {
   max-height: 100%;
   max-width: 100%;
 }

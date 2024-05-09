@@ -31,21 +31,21 @@ following methods with the name of your new font:
   font-family: 'sitka-small';
   font-style: normal;
   font-weight: normal;
-  src: url(Fonts/SitkaSmall.ttf);
+  src: url(../Fonts/SitkaSmall.ttf);
 }
 
 @font-face {
   font-family: 'sitka-small';
   font-style: italic;
   font-weight: normal;
-  src: url(Fonts/SitkaSmall-Italic.ttf);
+  src: url(../Fonts/SitkaSmall-Italic.ttf);
 }
 
 @font-face {
   font-family: 'sitka-small';
   font-style: normal;
   font-weight: bold;
-  src: url(Fonts/SitkaSmall-Bold.ttf);
+  src: url(../Fonts/SitkaSmall-Bold.ttf);
 }
 ```
 - **font-family**: the name you want to give to your font family
@@ -80,16 +80,19 @@ Upload all the images you wish to put in your ebook inside the folder [**Images*
 pictures, you could organize them by creating new folders inside Images (e.g. _Covers_, _Chapter1_, _Chapter2_, ...).
 
 #### 2. Link the images to the document
-In the file (e.g. [_chapter1.xhtml_](Text/chapter1.xhtml)) where you wish to put your image
-[img001.png](Images/Chapter1) write down the following line:
+In the file (e.g. [_chapter0.xhtml_](Text/chapter0.xhtml)) where you wish to put your image (e.g.
+[_img000.png_](Images/Chapter0/img000.png)) write down the following line:
 
 ```xhtml
-<br/> <p class="ilustra"> <img alt="" src="../Images/img004.png"/> </p> <br/>
+<br/> <p class="img-simple"> <img alt="" src="../Images/Chapter1/img001.png"/></p> <br/>
 ```
-- **\<br/>**: 
-- **\<p>...\</p>**:
-- **class=" "**:
-- **"ilustra"**:
-- **\<img>**:
-- **alt=" "**:
-- **src=" "**:
+- **\<br/>**: Line break in the content to give more space between the text and the image.
+- **\<p>...\</p>**: Defines a paragraph (or an image in this case) in the content.
+- **class=" "**: Assigns a tag to an element to reference it from the CSS and style it.
+- **"img-simple"**: Class name assigned to the element referenced in the css file (style.css).
+- **\<img>**: Tag used to insert an image into the content.
+- **alt=" "**: Alternative text describing the image in case it can't be displayed.
+- **src=" "**: Source/URL of the image (it can be from inside the project or from the internet).
+
+To create a new style for images or modify the existent, you can simply modify "**img-simple**" inside [**styles.css**](Styles/styles.css)
+as you wish.
