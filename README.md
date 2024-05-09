@@ -11,6 +11,12 @@ This is a basic template to start a new electronic book project.
 > in YouTube.
 
 ## How to use this template
+If you decide to use Sigil, you only need to download [**epub-template.epub**](epub-template.epub) and open it with Sigil.
+In case you decide to use a different editor, you should download the entire repository and edit the files as you please.
+
+Next, if you face some trouble understanding how everything works, check the brief guide step-by-step bellow about how to
+add images and font families.
+
 ### Add font families
 #### 1. Add font files (.ttf) to Fonts
 
