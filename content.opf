@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="2.0" unique-identifier="BookId" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:language>en</dc:language>
+    <dc:title>[Title here]</dc:title>
+    <meta name="Sigil version" content="2.0.2"/>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-05-10</dc:date>
+    <dc:identifier opf:scheme="UUID" id="BookId">urn:uuid:3c5fddc9-e42e-4497-9d2e-ad142f1105d6</dc:identifier>
+    <meta name="cover" content="front-cover-example.png"/>
+  </metadata>
+  <manifest>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="SitkaSmall.ttf" href="Fonts/SitkaSmall.ttf" media-type="font/ttf"/>
+    <item id="SitkaSmall-Bold.ttf" href="Fonts/SitkaSmall-Bold.ttf" media-type="font/ttf"/>
+    <item id="SitkaSmall-Italic.ttf" href="Fonts/SitkaSmall-Italic.ttf" media-type="font/ttf"/>
+    <item id="image-not-found.png" href="Images/image-not-found.png" media-type="image/png"/>
+    <item id="img000.png" href="Images/img000.png" media-type="image/png"/>
+    <item id="back-cover-example.png" href="Images/back-cover-example.png" media-type="image/png"/>
+    <item id="cover-not-found.png" href="Images/cover-not-found.png" media-type="image/png"/>
+    <item id="front-cover-example.png" href="Images/front-cover-example.png" media-type="image/png"/>
+    <item id="styles.css" href="Styles/styles.css" media-type="text/css"/>
+    <item id="Section0001_Chapter0.xhtml" href="Text/Section0001_Chapter0.xhtml" media-type="application/xhtml+xml"/>
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="Section0001_Chapter0.xhtml"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover" href="Text/cover.xhtml"/>
+  </guide>
+</package>

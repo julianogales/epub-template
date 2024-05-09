@@ -146,21 +146,6 @@ li {
 
 /* Images */
 
-.img-cover {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 0;
-  text-align: center;
-  text-indent: 0;
-  page-break-before: always;
-  page-break-after: always;
-}
-.img-cover img {
-  height: 100%;
-  max-height: 100%;
-}
-
 .img-simple {
   margin: 1em 0;
   text-align: center;
@@ -170,4 +155,9 @@ li {
 .img-simple img {
   max-height: 100%;
   max-width: 100%;
+}
+
+/* Boxes */
+.box {
+	border: 1px solid;
 }
